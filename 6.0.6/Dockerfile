@@ -24,9 +24,8 @@ RUN apt-get update && apt-get install -y \
 		php7.1-xdebug \
 	&& php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 	&& php composer-setup.php --install-dir=/usr/bin --filename=composer \
-	&& composer require "phpunit/phpunit:~6.0.6" --prefer-source --no-interaction \
-	&& composer require "phpunit/php-invoker" --prefer-source --no-interaction \
-	&& ln -s /tmp/vendor/bin/phpunit /usr/local/bin/phpunit \
+	&& wget https://phar.phpunit.de/phpunit-6.0.6.phar \
+	&& mv phpunit-6.0.6.phar /usr/local/bin/phpunit \
 	&& php -m | grep -i xdebug
 
 VOLUME ["/app"]
