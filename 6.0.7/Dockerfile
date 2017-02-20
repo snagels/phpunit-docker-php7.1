@@ -1,4 +1,4 @@
-# PHPUnit 6.0.6 Docker Container
+# PHPUnit 6.0.7 Docker Container
 FROM ubuntu:16.04
 MAINTAINER Sebastian Nagels <nagels.sebastian@gmail.com>
 
