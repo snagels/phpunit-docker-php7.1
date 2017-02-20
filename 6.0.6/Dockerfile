@@ -27,6 +27,7 @@ RUN apt-get update && apt-get install -y \
 	&& php composer-setup.php --install-dir=/usr/bin --filename=composer \
 	&& wget https://phar.phpunit.de/phpunit-6.0.6.phar \
 	&& mv phpunit-6.0.6.phar /usr/local/bin/phpunit \
+	&& chmod +x /usr/local/bin/phpunit \
 	&& php -m | grep -i xdebug
 
 VOLUME ["/app"]
