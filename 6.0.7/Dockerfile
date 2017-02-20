@@ -11,6 +11,7 @@ RUN LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
 RUN apt-get update && apt-get install -y \
 		git \
 		curl \
+		wget \
 		php7.1 \
 		php7.1-dom \
 		php7.1-bcmath \
