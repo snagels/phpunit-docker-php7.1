@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y \
 		curl \
 		php7.1 \
 		php7.1-dom \
+		php7.1-bcmath \
 		php7.1-mongodb \
 		php7.1-bz2 \
 		php7.1-curl \
